@@ -26,6 +26,8 @@
         <module>search</module>
         <module>mgt</module>
         <module>getway</module>
+        <module>config</module>
+        <module>eureka</module>
     </modules>
 
     <properties>
