@@ -9,17 +9,11 @@
         <relativePath>../</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>getway</artifactId>
 
 
 
-
     <dependencies>
-        <dependency>
-            <groupId>com.wlw.supplychain</groupId>
-            <artifactId>common</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
@@ -31,6 +25,10 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
         </dependency>
     </dependencies>
 
