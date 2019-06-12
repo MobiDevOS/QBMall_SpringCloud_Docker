@@ -73,11 +73,6 @@
                 <version>${mybatis-starter.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.oracle</groupId>
-                <artifactId>ojdbc14</artifactId>
-                <version>${com.oracle.ojdbc14.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid-spring-boot-starter</artifactId>
                 <version>${com.alibaba.druid.version}</version>
