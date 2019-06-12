@@ -28,6 +28,8 @@
         <module>getway</module>
         <module>config</module>
         <module>eureka</module>
+        <module>order</module>
+        <module>cart</module>
     </modules>
 
     <properties>

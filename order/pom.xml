@@ -6,16 +6,15 @@
         <artifactId>parent</artifactId>
         <groupId>com.qbkj.mall</groupId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>admin</artifactId>
+    <artifactId>order</artifactId>
     <groupId>com.qbkj.mall</groupId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>admin</name>
-    <description>mall-admin project for mall</description>
+    <name>order</name>
+    <description>mall-order project for mall</description>
 
 
     <dependencies>
@@ -28,11 +27,6 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>org.springframework.retry</groupId>
             <artifactId>spring-retry</artifactId>

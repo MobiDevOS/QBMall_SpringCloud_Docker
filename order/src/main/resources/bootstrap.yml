@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: order
+  cloud:
+    config:
+      # 指定分支
+      label: master
+      # 指定环境
+      profile: dev
+      name: order,order-jdbc
+      uri: http://127.0.0.1:8501/
+      fail-fast: true
+      retry:
+        initial-interval: 2000
+        # 最多重试次数
+        max-attempts: 6
+        # 最大重试间隔
+        max-interval: 4000
+        # 每次重试时间是之前的倍数
+        multiplier: 1.2
+  profiles:
+    active: dev
+
+server:
+  port: 8505
+
+management:
+  security:
+    enabled: false
