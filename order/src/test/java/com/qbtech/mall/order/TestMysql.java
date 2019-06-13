@@ -1,4 +1,4 @@
-package com.qbtech.mall.admin;
+package com.qbtech.mall.order;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -10,7 +10,7 @@ import javax.sql.DataSource;
 import java.sql.SQLException;
 
 @RunWith(SpringJUnit4ClassRunner.class) /*添加SpringJUnit支持，引入Spring-Test框架*/
-@SpringBootTest(classes = AdminApplication.class) /*指定Springboot启动类启动*/
+@SpringBootTest(classes = OrderApplication.class) /*指定Springboot启动类启动*/
 public class TestMysql {
 
     @Autowired

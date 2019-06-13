@@ -1,4 +1,4 @@
-package org.mybatis.generator.plugins;
+package com.qbtech.mall.order;
 
 import java.util.Date;
 import java.util.List;
@@ -107,5 +107,10 @@ public class MyBatisPlugin extends PluginAdapter {
 
     protected String getDateString() {
         return DateFormatUtils.format(new Date(), "yyyy-MM-dd HH:mm:ss");
+    }
+
+
+    public static void main(String args[]){
+
     }
 }

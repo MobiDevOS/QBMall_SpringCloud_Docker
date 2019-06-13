@@ -21,7 +21,7 @@ import org.springframework.web.client.RestTemplate;
 @RequestMapping("/api")
 public class CartRestImpl implements CartRest {
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(CartRestImpl.class);
+	private static final Logger logger = LoggerFactory.getLogger(CartRestImpl.class);
 
 	@Value("${testValue}")
 	String helloWord;
