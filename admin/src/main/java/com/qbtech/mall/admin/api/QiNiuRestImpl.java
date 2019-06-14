@@ -23,7 +23,6 @@ public class QiNiuRestImpl {
 	IQiniuUploadFileService qiniuUploadFileService;
 
 
-
 	/**
 	 * 上传图片文件七牛云
 	 * @param files
@@ -40,8 +39,5 @@ public class QiNiuRestImpl {
 		return mGson.toJson(mResult);
 	}
 
-	public String uploadFile(){
-		return null;
-	}
 
 }

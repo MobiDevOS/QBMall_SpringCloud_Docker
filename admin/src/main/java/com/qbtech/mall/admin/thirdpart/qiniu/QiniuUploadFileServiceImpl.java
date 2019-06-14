@@ -111,26 +111,12 @@ public class QiniuUploadFileServiceImpl implements IQiniuUploadFileService,Initi
 		List<String> list = new LinkedList<>();
 
 		for (int i = 0; i < file.length; i++) {
-			String fileName = file[i].getOriginalFilename();
-
-//			if (!dest.getParentFile().exists()) {
-//				dest.getParentFile().mkdirs();
-//				try {
-//					dest.createNewFile();
-//				} catch (IOException e) {
-//					logger.info("创建文件异常",e);
-//				}
-//			}
-//			BufferedOutputStream out = null;
-//			out = new BufferedOutputStream(new FileOutputStream(dest));
-//			out.write(file[i].getBytes());
 			try {
 
 				Response mRespone= uploadFile(file[i].getInputStream());
 				MyPutRet ret =  new Gson().fromJson(mRespone.bodyString(), MyPutRet.class);
 				if(mRespone.isOK()){
 					//如果不需要对图片进行样式处理，则使用以下方式即可
-					//return DOMAIN + ret.key;
 					String url = DOMAIN+ ret.key+ STYLE;
 					list.add(url);
 				}
@@ -154,8 +140,6 @@ public class QiniuUploadFileServiceImpl implements IQiniuUploadFileService,Initi
         //putPolicy.put("returnBody", "{\"key\":\"$(key)\",\"hash\":\"$(etag)\",\"bucket\":\"$(bucket)\",\"width\":$(imageInfo.width), \"height\":${imageInfo.height}}");
 	    //自定义上传名称
 	    //putPolicy.put("saveKey", UUID.randomUUID());
-
-
     }
 
 	class MyPutRet {

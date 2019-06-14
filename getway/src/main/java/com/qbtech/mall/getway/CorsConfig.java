@@ -8,11 +8,11 @@ import org.springframework.web.filter.CorsFilter;
 
 /**
  * 跨域问题
- * 1. 微服务配置跨域+zuul不配置=有跨域问题
- * 2. 微服务配置+zuul配置=有跨域问题
- * 3. 微服务不配置+zuul不配置=有跨域问题
- * 4. 微服务不配置+zuul配置=ok
- * Created by liyuan on 2019/3/7
+ * 1. 单体微服务配置跨域+zuul不配置=有跨域问题
+ * 2. 单体微服务配置+zuul配置=有跨域问题
+ * 3. 单体微服务不配置+zuul不配置=有跨域问题
+ * 4. 单体微服务不配置+zuul配置=ok
+ * Created by zhujiule on 2019/3/7
  */
 @Configuration
 public class CorsConfig {

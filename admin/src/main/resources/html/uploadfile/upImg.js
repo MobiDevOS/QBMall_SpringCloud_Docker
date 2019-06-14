@@ -25,15 +25,6 @@ function uploadImg(){
         success:function(res){
             console.log(res);
             alert("图片上传完成"+res);
-            // if (res.status.code == 200) {
-            //     if (!$('#img').empty()) {
-            //         $('#img').empty();
-            //     }
-            //     // 这一串代码复制不上来 ,截图在下面
-            //     $('#img').append(" ![](+res.result[0]+)");
-            // } else {
-            //     alert("图片上传失败");
-            // }
         },
         dataType:"json"
     })
