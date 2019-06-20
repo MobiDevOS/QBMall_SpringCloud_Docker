@@ -17,7 +17,6 @@ import java.io.IOException;
  *  <meta http-equiv="Access-Control-Allow-Origin" content="*">
  * @Description:
  */
-@Component
 public class CorsFilter implements Filter {
     Logger logger = LoggerFactory.getLogger(CorsFilter.class);
     @Override
