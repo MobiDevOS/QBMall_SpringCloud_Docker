@@ -5,10 +5,7 @@ import tornado.web
 import py_eureka_client.eureka_client as eureka_client
 from tornado.options import define, options
 
-
-
 define("port", default=8505, help="run on the given port", type=int)
-
 app_name = 'python'
 your_rest_server_port = 8505
 

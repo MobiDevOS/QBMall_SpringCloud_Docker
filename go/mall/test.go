@@ -1,0 +1,5 @@
+package mall
+
+func main(){
+
+}
