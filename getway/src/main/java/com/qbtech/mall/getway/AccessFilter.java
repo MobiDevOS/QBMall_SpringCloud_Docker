@@ -1,16 +1,8 @@
 package com.qbtech.mall.getway;
 
 import com.netflix.zuul.ZuulFilter;
-import com.netflix.zuul.context.RequestContext;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.StringRedisTemplate;
-import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 
-import javax.servlet.http.HttpServletRequest;
-import java.io.UnsupportedEncodingException;
-import java.net.URLDecoder;
-import java.util.concurrent.TimeUnit;
 
 import static org.springframework.cloud.netflix.zuul.filters.support.FilterConstants.PRE_TYPE;
 
@@ -32,15 +24,10 @@ public class AccessFilter extends ZuulFilter {
         return true;
     }
 
-    @Autowired
-    private StringRedisTemplate redisTemplate;
 
     @Override
     public Object run() {
         //log.info("Enter the AccessFilter...");
-        RequestContext ctx = RequestContext.getCurrentContext();
-        ctx.set("startTime", System.currentTimeMillis());
-        HttpServletRequest request = ctx.getRequest();
         return null;
 //        // 不需要鉴权直接放行的接口，在此定义
 //        if (request.getRequestURI().equals("/account/user/login/password")

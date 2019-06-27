@@ -30,6 +30,8 @@
         <module>eureka</module>
         <module>order</module>
         <module>cart</module>
+        <module>python</module>
+        <module>go</module>
     </modules>
 
     <properties>
