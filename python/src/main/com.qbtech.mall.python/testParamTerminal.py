@@ -1,0 +1,1 @@
+#nohup python myscript.py params1 > nohup.out 2>&1 &

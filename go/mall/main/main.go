@@ -3,8 +3,7 @@ package main
 import (
 	"fmt"
 	"net/http"
-
-	eureka "github.com/xuanbo/eureka-client"
+	 eureka "github.com/xuanbo/eureka-client"
 )
 
 func main() {
@@ -27,11 +26,9 @@ func main() {
 	// start client, register、heartbeat、refresh
 	client.Start()
 
-	// http server
-	http.HandleFunc("/v1/services", func(writer http.ResponseWriter, request *http.Request) {
+	http.HandleFunc("/", func(writer http.ResponseWriter, request *http.Request) {
 		// full applications from eureka server
 		//apps := client.Applications
-		//
 		//b, _ := json.Marshal(apps)
 		name := "hello welcome go moudle"
 		_, _ = writer.Write([]byte(name))

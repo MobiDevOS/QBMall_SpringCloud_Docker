@@ -1,5 +1,0 @@
-package mall
-
-func main(){
-
-}
