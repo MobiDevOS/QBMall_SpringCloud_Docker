@@ -102,8 +102,85 @@
 <http.client.HTTPResponse object at 0x10e63d748>
 <http.client.HTTPResponse object at 0x10e7b5080>
 <http.client.HTTPResponse object at 0x10e7b5550>
-<http.client.HTTPResponse object at 0x10f5279b0>
-<http.client.HTTPResponse object at 0x10f527e80>
-<http.client.HTTPResponse object at 0x10f515390>
-<http.client.HTTPResponse object at 0x10f515860>
-<http.client.HTTPResponse object at 0x10f515d30>
+<http.client.HTTPResponse object at 0x10e7b5a20>
+<http.client.HTTPResponse object at 0x10e7b5ef0>
+<http.client.HTTPResponse object at 0x10e7b6400>
+<http.client.HTTPResponse object at 0x10e7b68d0>
+<http.client.HTTPResponse object at 0x10e7b6da0>
+<http.client.HTTPResponse object at 0x10e7a72b0>
+<http.client.HTTPResponse object at 0x10e7a7780>
+<http.client.HTTPResponse object at 0x10e7a7c50>
+<http.client.HTTPResponse object at 0x10e7b6fd0>
+<http.client.HTTPResponse object at 0x10e7b6390>
+<http.client.HTTPResponse object at 0x10e7b61d0>
+<http.client.HTTPResponse object at 0x10e63dfd0>
+<http.client.HTTPResponse object at 0x10e63d390>
+<http.client.HTTPResponse object at 0x10e63d0b8>
+<http.client.HTTPResponse object at 0x10e61cb00>
+<http.client.HTTPResponse object at 0x10e799e80>
+<http.client.HTTPResponse object at 0x10e799048>
+<http.client.HTTPResponse object at 0x10e799668>
+<http.client.HTTPResponse object at 0x10e0cfb38>
+<http.client.HTTPResponse object at 0x10e7b4b00>
+<http.client.HTTPResponse object at 0x10e7b4748>
+<http.client.HTTPResponse object at 0x10e7a7c50>
+<http.client.HTTPResponse object at 0x10e7a77b8>
+<http.client.HTTPResponse object at 0x10e7a7048>
+<http.client.HTTPResponse object at 0x10e7a82b0>
+<http.client.HTTPResponse object at 0x10e7a8780>
+<http.client.HTTPResponse object at 0x10e7a8c50>
+<http.client.HTTPResponse object at 0x10e7a91d0>
+<http.client.HTTPResponse object at 0x10e7a8eb8>
+<http.client.HTTPResponse object at 0x10e7a8550>
+<http.client.HTTPResponse object at 0x10e7a7ef0>
+<http.client.HTTPResponse object at 0x10e7a7550>
+<http.client.HTTPResponse object at 0x10e7a79e8>
+<http.client.HTTPResponse object at 0x10e0ba9e8>
+<http.client.HTTPResponse object at 0x10e7b4908>
+<http.client.HTTPResponse object at 0x10e7b49e8>
+<http.client.HTTPResponse object at 0x10e799048>
+<http.client.HTTPResponse object at 0x10e799cf8>
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py", line 1317, in do_open
+    encode_chunked=req.has_header('Transfer-encoding'))
+  File "/usr/localTraceback (most recent call last):
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py", line 1317, in do_open
+    encode_chunked=req.has_header('Transfer-encoding'))
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1016, in _send_output
+    self.send(msg)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 956, in send
+    self.connect()
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1384, in connect
+    super().connect()
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 928, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 707, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "TashVisitCsdn.py", line 24, in <module>
+    if __name__ == "__main__":
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py", line 525, in open
+    response = self._open(req, data)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py", line 543, in _open
+    '_open', req)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py", line 503, in _call_chain
+    result = func(*args)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py", line 1360, in https_open
+    context=self._context, check_hostname=self._check_hostname)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py", line 1319, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
