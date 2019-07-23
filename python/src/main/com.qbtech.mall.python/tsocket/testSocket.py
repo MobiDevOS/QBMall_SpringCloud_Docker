@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
 
-import socket, time, _thread
+import tsocket, time, _thread
 
 def socket_port(ip, port):
     """
@@ -10,7 +10,7 @@ def socket_port(ip, port):
     try:
         if port >=65535:
             print ('端口扫描结束')
-        s =socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s =tsocket.socket(tsocket.AF_INET, tsocket.SOCK_STREAM)
         result=s.connect_ex((ip, port))
         if result==0:
             lock.acquire()
